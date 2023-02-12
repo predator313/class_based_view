@@ -8,5 +8,10 @@ class Myview(View):
     def get(self,request):
         return HttpResponse(self.name)
 
+#making child of MyView class
+class Myviewchild(Myview):
+    def get(self,request):
+        return HttpResponse(self.name)
+
 
 
