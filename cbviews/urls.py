@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.Myview.as_view(name='james'),name='cb'),
     path('sub/',views.Myviewchild.as_view(name='aamir ashraf'),name='cbsub'),
+    path('contact/',views.Myform.as_view(),name='contact'),
 ]
